@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>淘宝券导航</title>
+    <meta name="keywords" content="666"/>
+    <meta name="description" content="淘宝券导航"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/zui/1.8.1/css/zui.min.css">
+    <script src="https://cdn.bootcss.com/zui/1.8.1/lib/jquery/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/zui/1.8.1/js/zui.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+</head>
+<!--  来自淘宝券搜索：http://www.tbquan.cn  -->
+<body style="background-image: url({{url_for('static', filename = 'images/bg.jpeg')}})">
+<header>
+    <div class="container" style="padding-right: 0px;padding-left: 0px;">
+        <div class="main">
+            <h1 class="logo">
+                <a href="http://www.tbquan.cn">
+                    <img src="{{url_for('static', filename = 'images/ico.png')}}">
+                    <span>tbquan.cn导航</span>
+                </a>
+            </h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/" target="_blank">本站开源git地址</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="not_operational"></div>
+</header>
+<div id="content" data-customize="true" data-customtheme="true" class="default-bg">
+    <div class="main-index">
+        <div class="container content-box">
+            <section class="sousuo">
+                <div class="search">
+                    <div class="search-box">
+                        <img class="search-icon" src="{{url_for('static', filename = 'images/logo_2.png')}}">
+                        <input type="text" id="txt" class="search-input" placeholder="请输入关键词">
+                        <button class="search-btn visible-sm visible-md visible-lg" id="search-btn">搜索</button>
+                        <i class="search-clear icon icon-remove-sign" style="display: none;"></i>
+                    </div>
+                    <!-- 搜索热词 -->
+                    <div class="box search-hot-text" id="box" style="display: none;">
+                        <ul></ul>
+                    </div>
+                    <!-- 搜索引擎 -->
+                    <div class="search-engine" style="display: none;">
+                        <div class="search-engine-head">
+                            <strong class="search-engine-tit">选择默认搜索引擎：</strong>
+                            <div class="search-engine-tool">搜索热词： <span id="hot-btn" class="off"></span></div>
+                        </div>
+                        <ul class="search-engine-list">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="row dh">
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12"><strong class="dhname" id="1">搜索 · 购物</strong></div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.wodecai.cn/" target="_blank">淘宝券</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.tbquan.cn/" target="_blank">淘宝券搜索</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.taobao.com" target="_blank">淘宝</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.tmall.com/" target="_blank">天猫</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://m.gome.com.cn/coupons_center.html?cmpid=cps_20244_24913_member-20244&sid=20244&wid=24913&feedback=member-20244" target="_blank">国美</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.suning.com/" target="_blank">苏宁</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.dangdang.com/" target="_blank">当当网</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://ai.taobao.com/search/index.htm?pid=mm_111618164_19972532_68722634&unid=&source_id=search&key=%E8%80%B3%E6%9C%BA&prepvid=200_11.15.202.13_362_1541306498098&sort=biz30day&spm=a231o.7712113%2Fk.1003.d2" target="_blank">爱淘宝</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.jd.com" target="_blank">京东</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12"><strong class="dhname" id="2">影视 · 在线</strong></div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://v.tbquan.cn" target="_blank">vip解析</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+
+                            <a href="http://vip.tbquan.cn" target="_blank">vip影视</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://v.kaclub.cn" target="_blank">影视解析</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://vip.kaclub.cn" target="_blank">vip在线</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.youku.com" target="_blank">优酷</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://v.qq.com" target="_blank">腾讯视频</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://v.baidu.com/tvplayindex/" target="_blank">百度视频</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://tv.sohu.com" target="_blank">搜狐视频</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12"><strong class="dhname" id="3">搜索 · 网盘</strong></div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.kszixue.com" target="_blank">百度云搜索</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+
+                            <a href="http://www.lqkweb.com" target="_blank">网盘搜索</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.kaclub.cn" target="_blank">老司机网盘</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://pan.tbquan.cn" target="_blank">淘宝圈</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.tbquan.cn" target="_blank">云盘搜索</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://pan.kszixue.com" target="_blank">网盘搜</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://pan.tbquan.cn" target="_blank">云盘搜</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://pan.kszixue.com" target="_blank">网盘引擎</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.lqkweb.com" target="_blank">网盘资源</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12"><strong class="dhname" id="4">模板 · 素材</strong></div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.58pic.com/" target="_blank">千图网</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+
+                            <a href="http://588ku.com/" target="_blank">千库网</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://app.brandmark.io/v2/" target="_blank">LOG设计</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.1ppt.com/" target="_blank">第1ppt</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.pptschool.com/" target="_blank">ppt大学</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.ypppt.com/" target="_blank">优品ppt</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.chuangkit.com/" target="_blank">创客贴</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://699pic.com/" target="_blank">摄图网</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.doutula.com/" target="_blank">斗图啦</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12"><strong class="dhname" id="5">网络 · 直播</strong></div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://tv.cctv.com/live/cctv1/" target="_blank">cctv</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+
+                            <a href="https://www.douyu.com/" target="_blank">斗鱼</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.yy.com/" target="_blank">YY</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.longzhu.com/" target="_blank">龙珠直播</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.quanmin.tv/" target="_blank">全民tv</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.huajiao.com/" target="_blank">花椒直播</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.zhibo.me/" target="_blank">直播迷</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.tiantianzhibo.com/" target="_blank">天天直播</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.zhanqi.tv/" target="_blank">战旗</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12"><strong class="dhname" id="6">财经 · 新闻</strong></div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://finance.sina.com.cn/" target="_blank">新浪财经</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+
+                            <a href="http://finance.qq.com/" target="_blank">腾讯财经</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.hexun.com/" target="_blank">和讯网</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.eastmoney.com/" target="_blank">东方财富</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://finance.ifeng.com/" target="_blank">凤凰财经</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.jrj.com.cn/" target="_blank">金融界</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://money.163.com/" target="_blank">网易财经</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://business.sohu.com/" target="_blank">搜狐财经</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://fund.eastmoney.com/" target="_blank">天天基金</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12"><strong class="dhname" id="7">新闻 · 播报</strong></div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.xinhuanet.com/" target="_blank">新华网</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+
+                            <a href="http://news.ifeng.com/" target="_blank">凤凰资讯</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.huanqiu.com/" target="_blank">环球网</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="网易新闻" target="_blank">网易新闻</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.toutiao.com/" target="_blank">今日头条</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.thepaper.cn/" target="_blank">澎湃新闻</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.youth.cn/" target="_blank">中国青年</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://news.qq.com/" target="_blank">腾讯新闻</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.infzm.com/" target="_blank">南方周末</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12"><strong class="dhname" id="8">热搜 · 指数</strong></div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://s.weibo.com/top/summary?cate=homepage" target="_blank">微博热搜</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+
+                            <a href="http://www.zhihufans.com/index.php" target="_blank">知乎榜</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://www.cbooo.cn" target="_blank">实时票房</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://top.baidu.com/" target="_blank">百度热搜</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://top.taobao.com/" target="_blank">淘宝热搜</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://top.sogou.com/" target="_blank">搜狗热搜</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://tv.sohu.com/hothdtv/" target="_blank">搜狐热搜</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://index.youku.com/" target="_blank">优酷热搜</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://trends.so.com/index" target="_blank">360趋势</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3 dh">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <strong class="dhname" id="9">实用 · 工具</strong>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://v.tbquan.cn" target="_blank">视频解析</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+
+                            <a href="http://dwz.wailian.work/" target="_blank">短网址</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.51240.com/" target="_blank">便民查询</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://p.haoii123.com/" target="_blank">在线排版</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://deepba.com/" target="_blank">装逼神器</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://cn.office-converter.com/" target="_blank">文件转换</a>
+                        </div>
+
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.ageeye.cn/" target="_blank">地图制作</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="https://www.json.cn/" target="_blank">Json工具</a>
+                        </div>
+                        <div class="col-xs-4 mb-2">
+                            <a href="http://seo.chinaz.com" target="_blank">站长工具</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  来自淘宝券搜索：http://www.tbquan.cn  -->
+<footer class="footer text-center bg-white">
+    <!--<div class="container">-->
+    <!---->
+    <!--</div>-->
+    <div class="container">
+
+        <ul class=" pull-left navbar-link footer-nav">
+            <li>
+                <a href="https://www.taobao.com" target="_blank" title="淘宝网"> 淘宝网 </a>
+                <a href="http://www.tbquan.cn" target="_blank" title="淘宝券"> 淘宝券 </a>
+                <a href="http://www.81ad.cn" target="_blank" title="百度云搜索"> 百度云搜索 </a>
+                <a href="/about">关于我们 </a>
+                <a href="javascript:alert('Email to:798244092@qq.com ,TKS');">建议 </a>
+                <a href="http://www.81ad.cn/buy" target="_blank" style="color:red" alt="百度云搜索">本站源码出售</a>
+                &copy; 2014-2019 <a href="http://www.tbquan.cn" target="_blank" title="百度云网盘搜索引擎">百度网盘搜索引擎</a>
+                <a href='http://www.miitbeian.gov.cn/'>粤ICP备09169866号-1</a>
+            </li>
+        </ul>
+
+        <ul class=" pull-right navbar-link footer-nav">
+            <li id="hitokoto">每日寄语获取中...</li>
+        </ul>
+
+    </div>
+</footer>
+<div id="get-top" title="回到顶部" style="display: none;">
+    <i class="icon icon-arrow-up"></i></div>
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+<script src="{{url_for('static', filename = 'js/js.js')}}"></script>
+</body>
+</html>
