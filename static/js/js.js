@@ -191,7 +191,7 @@ $(function(){
     }, {
       name: '淘宝券',
       img: '/static/images/quan.jpg',
-      url: 'https://www.tbquan.cn/search?q='
+      url: 'http://www.tbquan.cn/search?q='
     }, {
       name: '百度',
       img: '/static/images/logo.jpg',
