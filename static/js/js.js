@@ -185,13 +185,13 @@ $(function(){
   //$('#box ul').html() === '' ? $('#box').css('height','0px') : $('#box').css('height','auto');
   var search = {
     data: [{
-      name: '网盘搜索',
+      name: '网盘搜',
       img: '/static/images/logo_2.png',
       url: 'http://www.81ad.cn/list?q='
     }, {
       name: '淘宝券',
       img: '/static/images/quan.jpg',
-      url: 'https://cn.bing.com/search?q='
+      url: 'https://www.tbquan.cn/search?q='
     }, {
       name: '百度',
       img: '/static/images/logo.jpg',
