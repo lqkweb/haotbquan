@@ -1,7 +1,7 @@
 # haotbquan
 
 #### 项目介绍
-淘宝券网址导航
+淘宝券网址导航, Flask+Bootstrap开发的网址导航
 
 使用python3+
 
