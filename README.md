@@ -11,7 +11,7 @@
 
 #### 安装教程
 
-git clone https://github.com/lqkweb/sqlflow.git
+git clone https://github.com/lqkweb/haotbquan.git
 
 pip install -r requirements.txt
 
