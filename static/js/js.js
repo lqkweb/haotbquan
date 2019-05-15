@@ -185,25 +185,26 @@ $(function(){
   //$('#box ul').html() === '' ? $('#box').css('height','0px') : $('#box').css('height','auto');
   var search = {
     data: [{
-      name: '网盘搜',
-      img: '/static/images/logo_2.png',
-      url: 'http://www.81ad.cn/list?q='
+      name: '爱淘宝',
+      img: '/static/images/tao.jpg',
+      url: 'https://ai.taobao.com/search/index.htm?pid=mm_111618164_19972532_68722634&unid=&source_id=search&prepvid=200_11.15.202.13_362_1541306498098&sort=biz30day&spm=a231o.7712113%2Fk.1003.d2&key='
+    }, {
+      name: '淘宝券',
+      img: '/static/images/quan2.jpg',
+      url: 'http://www.wodecai.cn/index.php?r=l&kw='
     }, {
       name: '淘宝券',
       img: '/static/images/quan.jpg',
-      url: 'http://www.tbquan.cn/search?q='
+      url: 'http://www.wodecai.cn/index.php?r=l&kw='
+
+    }, {
+      name: '网盘',
+      img: '/static/images/logo_2.png',
+      url: 'http://www.81ad.cn/list?q='
     }, {
       name: '百度',
       img: '/static/images/logo.jpg',
       url: 'https://www.baidu.com/s?wd='
-    }, {
-      name: '好搜',
-      img: '/static/images/logo_4.jpg',
-      url: 'https://www.so.com/s?q='
-    }, {
-      name: '搜狗',
-      img: '/static/images/logo_5.jpg',
-      url: 'https://www.sogou.com/web?query='
     }]
   }
   for(var i = 0; i < search.data.length; i++){
