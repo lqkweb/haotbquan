@@ -20,9 +20,10 @@ pip install -r requirements.txt
 1. python manage.py
 
 
-#### 更多
-
-更多原创站点：
-百度云搜索 http://www.lqkweb.com  http://www.81ad.cn
-淘宝券搜索 http://www.tbquan.cn   http://www.wodecai.cn
-网盘搜索   http://www.kaclub.cn   http://pan.tbquan.cn
+# 谢谢支持以下网站:
+- 百度云搜索 http://www.lqkweb.com 
+- 云搜 http://yun.lqkweb.com 
+- 淘宝券 http://wodeicai.cn
+- 淘宝券 http://www.tbquan.cn
+- 淘宝券导航 http://hao.tbquan.cn
+- 代码搜索 http://code.lqkweb.com
