@@ -125,7 +125,7 @@ $('#txt').keyup(function(e){
           success: function(res){
               for(var i = 0; i < res.s.length; i++){
                   resLength = res.s.length;
-                  oli_i = '<li>'+res.s[i]+'</li>';
+                  var oli_i = '<li>'+res.s[i]+'</li>';
                   $('#box ul').append(oli_i);
                   
                   $('#box ul li').eq(i).click(function(){

@@ -21,6 +21,7 @@ pip install -r requirements.txt
 
 
 # 谢谢支持以下网站:
+- 搜网盘：http://www.swpan.cn
 - 百度云搜索 http://www.lqkweb.com 
 - 云搜 http://yun.lqkweb.com 
 - 淘宝券 http://wodeicai.cn
