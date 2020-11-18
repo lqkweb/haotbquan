@@ -1,5 +1,9 @@
 # haotbquan
 
+#### 站点演示
+- 淘宝券导航 http://hao.tbquan.cn
+- 56盘 http://www.56pan.cn
+
 #### 项目介绍
 淘宝券网址导航, Flask+Bootstrap开发的网址导航
 
